@@ -1,11 +1,32 @@
+:root {
+    --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #1259C3;
+    --colorGrisOscuro: #666;
+    --colorGrisClaro: #EBEBEB;
+    --colorVerde: #39b54a;
+}
 *{
     font-family: Roboto, sans-serif;
+}
+body {
+    margin: 0;
+}
+p{
     font-size: 12px;
+
+}
+.precio{
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+
 }
 
 header.home{
-    background-color: #EAC926;
-    font-weight: 500;
+    background-color: var(--colorAmarillo);
+    padding-bottom: 15px;
 }
 
 .header__nav__p{
@@ -28,16 +49,25 @@ body header nav img{
    padding: 0 20px;
 }
 
-header div i{
+body header div {
     text-align: center ;
     color: white;
     font-size: 21px;
     width: 28px;
-    height: 22px;
-    background-color: blue;
-    padding: 4px;
-    margin: 12px 137px;
+    background-color: var(--colorCeleste);
+    padding: 10px;
+    margin: 0px 0px 10px 45%;
     border-radius: 5px;
+}
+body main img{
+    width: 100%;
+}
+body main section h3{
+    font-size: 24px;
+
+}
+body main section img{
+    width: 100%
 }
 
 footer section{
@@ -48,14 +78,14 @@ footer section{
 }
 
 footer section i{
-    color: blue;
+    color: var(--colorAzul);
     font-size: 25px
 }
 
 .footer--final{
 text-align: left;
 font-weight: lighter;
-color: #666;
+color: var(--colorGrisOscuro);
 padding: 0 5px;
 
 }
